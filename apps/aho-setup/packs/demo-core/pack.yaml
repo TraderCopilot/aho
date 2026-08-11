@@ -1,0 +1,7 @@
+name: demo-core
+description: Public demo pack (safe for external release trees)
+skills_include:
+  - thinking-language
+  - session-boot-ritual
+  - aho-installer
+  - demo-hello

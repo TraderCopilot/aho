@@ -1,0 +1,357 @@
+{
+    "product":  "agents-harness-os",
+    "distribution":  "public-demo",
+    "version":  "0.5.0",
+    "generated_at":  "2026-08-12T05:30:50.6402805+08:00",
+    "file_count":  87,
+    "files":  [
+                  {
+                      "path":  ".gitignore",
+                      "sha256":  "F71FC4EF3C3E49D7801049E7CE235BB1075A7D3C2AEE8D28BC5B3973506843D2"
+                  },
+                  {
+                      "path":  "CHANGELOG.md",
+                      "sha256":  "36280F6A8A81D2D76D77CA5708758760E933DCDF1720A30A7532A820AD820943"
+                  },
+                  {
+                      "path":  "CONTRIBUTING.md",
+                      "sha256":  "8BFB2F0E03970624F27772740C3F5D077FB9DD218A5B43EAF9125FC63B58165C"
+                  },
+                  {
+                      "path":  "LICENSE",
+                      "sha256":  "9B1761C950998FFFF3522CD0F4356E3B2396296BB6F767AB467B699643D233A1"
+                  },
+                  {
+                      "path":  "README.md",
+                      "sha256":  "048AF2886D5231E720356F847008DD96407EC95914B3647978525D29EE9E7960"
+                  },
+                  {
+                      "path":  "SECURITY.md",
+                      "sha256":  "2C7717C8F7C2BBA3E3AABA585D72FED0F2054013F096559C3271B9D8433B6093"
+                  },
+                  {
+                      "path":  "VERSION",
+                      "sha256":  "C2F2FC398169DFAF4B6A16077A5938B7361AEFAC1143F532B17EA18C3229CF3A"
+                  },
+                  {
+                      "path":  ".github/dependabot.yml",
+                      "sha256":  "C4AED7CF542077DDEBD4225BD9462B024643D6506768B97223FCA500137AD1DB"
+                  },
+                  {
+                      "path":  ".github/workflows/ci.yml",
+                      "sha256":  "776F35272106C70B88B83CE0B2AC26BF6B03E8BD82032B483FB28DC9A9915239"
+                  },
+                  {
+                      "path":  ".github/workflows/manifest.yml",
+                      "sha256":  "3E0D6E246ED1E571BA003E96EEF5F8B2819BFC350835EC4B4D130D5A7AB82C04"
+                  },
+                  {
+                      "path":  "apps/aho-setup/distribution.json",
+                      "sha256":  "97020B2561D30623B46396FD1BED5A39BE2184E7647199CB0200C8516F01CAEA"
+                  },
+                  {
+                      "path":  "apps/aho-setup/bin/aho-setup.ps1",
+                      "sha256":  "D0EBD5C4B308BBAB9DD5552439C85B0D2AFE4B21DA49764BEB9C1585D6FEAC68"
+                  },
+                  {
+                      "path":  "apps/aho-setup/bin/pack-release.ps1",
+                      "sha256":  "22AD74436AE43F16D979C3F89A078710BA13C16D4982CAD56F46BA0095A0875C"
+                  },
+                  {
+                      "path":  "apps/aho-setup/bin/rebuild-manifest.ps1",
+                      "sha256":  "E9ED8A9D62633473B6A7D31EA0EC2800178E5DB44EDC4DDF2F261C6795A968B1"
+                  },
+                  {
+                      "path":  "apps/aho-setup/bin/test-release.ps1",
+                      "sha256":  "D2D72264C7A7D64C06837CCF7F2FF51E0968DDD21DEC855578D42EED354E7163"
+                  },
+                  {
+                      "path":  "apps/aho-setup/bin/verify-release.ps1",
+                      "sha256":  "8A4C672A442FAA8F0DFF3BBF578462F77A8197506CACA7EB4F3082166088AC07"
+                  },
+                  {
+                      "path":  "apps/aho-setup/i18n/en-US.psd1",
+                      "sha256":  "FAF16E4F95128A8FE8029A3C5E798562ED7882022A92255130E660064E672C10"
+                  },
+                  {
+                      "path":  "apps/aho-setup/i18n/zh-CN.psd1",
+                      "sha256":  "B5808DEFBC4048F6FE893E8F11FAE931D2EBB8D099F05C7A445C9B06F975D847"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/AgentsGen.ps1",
+                      "sha256":  "EB8B1D8976D7F22EE7AC28C60CBB1F8170081FD1C8E0650675C7E3394652A38A"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Backup.ps1",
+                      "sha256":  "6A9EE8DF7713DBEEEC99D5BF8095A228860CDA8AACCA552B66DE98DFAEBB48B2"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Common.ps1",
+                      "sha256":  "C7C1022594D5E6CE757F6B14B3B438D5EB61D715BFBA30CDEB765E29FC2D5EF9"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Discover.ps1",
+                      "sha256":  "9A924172A95AC1B96E1C1AF3CCFE19B4AE4AE022F3CE1FB79E703B9655BBF831"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Doctor.ps1",
+                      "sha256":  "EC48AD06C8BD6F47A422821EE312B9C96F21FB356550747E0E2F3CF89E49EA1C"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/GlobalSetup.ps1",
+                      "sha256":  "31288AAD5A4AC3755F7B5E4E5D887C727BBE0D8793B264A51864BDB1BC5E0B20"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Hooks.ps1",
+                      "sha256":  "712935E88A775B8A10388E05AF93E1DAB892431C8AABCB94B87B5F7C3A6DBBF8"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/I18n.ps1",
+                      "sha256":  "BA03C6FBCFCCCC53676135E171107F3C1FB4D62E8EF2D895D7943C83D1DB623B"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/MattSetup.ps1",
+                      "sha256":  "69B1FFA40EA6B09B1D75F190B333E7C2FC85CED6E7E3CE0755716D6C5C4430F6"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Pack.ps1",
+                      "sha256":  "39ED3589CEC631F2D6C126C7EEE1A539F579C0C048C12219FBE68F7387760B0D"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Plan.ps1",
+                      "sha256":  "CE06364821B59214043F1C1E6D721BDA6DF99C456BDB9D0980848B6CAA36821A"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/PlatformRegistry.ps1",
+                      "sha256":  "E499BBD5D1EF6FBFDFFED6B0ACCB4923B12AC9EEB95C120778935C2322C5B8BF"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Profile.ps1",
+                      "sha256":  "36E2E709FC2E54A51C79FFB55E70CDCD3BB0FAD0BA981641B29C77B3AACAA1F5"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Project.ps1",
+                      "sha256":  "50CFF102E6EED5BDE6A0B28057C8D1B30B9825F3ECCA5F77B6E7E2B5FE5711AC"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Report.ps1",
+                      "sha256":  "481469C13B44745074FFC890413AA615DEE465F309F3328D07759ABE2846BBF2"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Reseed.ps1",
+                      "sha256":  "3952D6E5A9B8F82A920922C5EE60A974E05767303E08A6085D1039D4F62F405C"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Scan.ps1",
+                      "sha256":  "BD403A595030E1D649D5CCE92CBB7458867A023EB8C95D5BCC7410D98DE715F5"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/SkillAdd.ps1",
+                      "sha256":  "785C12DE890B0ACE0EE44B923B6610EC7918F24CEB9E749087C7ADE02F0BC249"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/UserActions.ps1",
+                      "sha256":  "C140CC4963B9E81AB9119E5BA6AFBB0F58E3CEE3370949F96F4F78A8C3347498"
+                  },
+                  {
+                      "path":  "apps/aho-setup/lib/Verify.ps1",
+                      "sha256":  "361C212E52EB4B474753691E45F5FEF19E12710E49A822FB2DAF16F0B4C943FB"
+                  },
+                  {
+                      "path":  "apps/aho-setup/packs/demo-core/pack.yaml",
+                      "sha256":  "108A3D02C4F89D92BA096A87DB3B06AD2A40F49AC271ECBFB9468273228C7681"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/amp.yaml",
+                      "sha256":  "74FF8F7145EB414BA153D17A48A867F410AD32E0191A69A63EB22D791EF4D756"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/antigravity.yaml",
+                      "sha256":  "2C72D62E401EA1AE1B26EFD6F116185CF72699C59B8D1309F96041C639E0582A"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/claude.yaml",
+                      "sha256":  "FA6196D7DACC549090DDE7C1C677FD47DAE5312D8B4118D3D46C0780C9C63838"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/cline.yaml",
+                      "sha256":  "59054E52389938008090D865D0CBC1DE7610FC0635881E53699F262B3FC28122"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/codearts.yaml",
+                      "sha256":  "2A34251AB994E8E399A0CD404816C0ACD715D94A78F71899B853510E3F151BBC"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/codebuddy.yaml",
+                      "sha256":  "479991637EA4A3EDAC7BEADFF1733BF48AA0BC57ABCC0C5D34B5CE693528443D"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/codex.yaml",
+                      "sha256":  "728901580406F4654F9B7D317F87639E9CE41BBEA144411CB92D57CBC1D795DA"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/command-code.yaml",
+                      "sha256":  "BC213A93582C4D4BC3CBB99A470F97E52E4F221FFC79A2CB05C11A7AF67DA8E3"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/copilot.yaml",
+                      "sha256":  "60856336D38BAA29165C49B0D15E3635DF28E9BA6D90D338A58DE91679C7172B"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/cursor.yaml",
+                      "sha256":  "40E53ED0852E94762BE8EC4156C6E8414076C97EE173A90E10662979DCECFF66"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/devin.yaml",
+                      "sha256":  "7E8548CB97B9CB97EF938BAB13CB5787CB7F272E686D2B0EB8320811AE49E2C9"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/droid.yaml",
+                      "sha256":  "522404387248E82045D23EC4AA5D8226C7D8E22AA1223E2A300A79A22FC8E4F5"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/gemini.yaml",
+                      "sha256":  "56A5391AD5BD6041E2956341ABD0F4BEC0A86C9886A2A7B79716B8C6884CF239"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/grok.yaml",
+                      "sha256":  "AB4E2BDFEEDD4E94487B64FC8A19CEC27F9DBFB9DE2673E75B2B62E034238C99"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/kimi.yaml",
+                      "sha256":  "6C131626EDF46BCD7FB29000993D73CF175AEBB3EA5E15E36008F9DE056388EB"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/openclaude.yaml",
+                      "sha256":  "F74E75BC0F32840DCB84422D897A573A260A0F537E4474F0D624CD61CBD54814"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/opencode.yaml",
+                      "sha256":  "1570997DFB5E266CE90434560F8FFD76B47FFAA89557F92778FB62B39D1DCA84"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/pi.yaml",
+                      "sha256":  "CB0C9F0D8B52E99DA0FC4A7957F8737A82797215D782E8FDE47975872A145409"
+                  },
+                  {
+                      "path":  "apps/aho-setup/platforms/_schema.yaml",
+                      "sha256":  "6262BCF86EAEAF1C7AD7F1C658E5A424D91153638152E5F33F58B1BF18F6B8A2"
+                  },
+                  {
+                      "path":  "apps/aho-setup/profiles/demo.yaml",
+                      "sha256":  "F90A543F22F9027FA18F9FC06B7E775B7472B89FD56BE099A6CC2BEC18C89B8D"
+                  },
+                  {
+                      "path":  "apps/aho-setup/schemas/aho-manifest.json",
+                      "sha256":  "48FE808ACA14526A07314875E694E01D12C4ECED20E2C5817A65C9C6DC657D72"
+                  },
+                  {
+                      "path":  "docs/CONFIGURATION.md",
+                      "sha256":  "0093105229F218508857CE26D7913511E6A0D82BAA801B64F599418228500C76"
+                  },
+                  {
+                      "path":  "docs/GETTING_STARTED.md",
+                      "sha256":  "98304A95AD5F49C392587715EE9B6C2C03E01838CF9AA56048A606DD24DE67D3"
+                  },
+                  {
+                      "path":  "docs/PLATFORM_SUPPORT.md",
+                      "sha256":  "FD9189CF263561FF05A8D4879224A3B1602EA1B9639BE9F4C3FFC59408145E9D"
+                  },
+                  {
+                      "path":  "docs/RELEASE-CONTRACT.md",
+                      "sha256":  "3E6DCBB5844A1504FDFE1BAE39CF14237EF4D6DCDAE5E391BC85473594AFDA11"
+                  },
+                  {
+                      "path":  "docs/SECURITY.md",
+                      "sha256":  "651400794134F138CAE1C058070A477A84C8819F97F55E7AD44BBFD78319A951"
+                  },
+                  {
+                      "path":  "docs/TROUBLESHOOTING.md",
+                      "sha256":  "8B44221345FE3D27D3162DAE6EB4BD62C07E74378CFE5D31EDDDB94307590AA2"
+                  },
+                  {
+                      "path":  "Global/AGENTS.md",
+                      "sha256":  "CF1B4BDD29AD3EB09FC96CB4985D5DB9A4781641BF964DBDA4F67E87C978D862"
+                  },
+                  {
+                      "path":  "Global/.agents/settings.json",
+                      "sha256":  "92FE0E1F6CAD3FDC07F626B28485A4406939A64E4A61DA5A3C39F4ECE255D7F5"
+                  },
+                  {
+                      "path":  "Global/.agents/skills/aho-installer/SKILL.md",
+                      "sha256":  "3916A90454FEF81FE8F7792D6641D7C5FE7C526F57A1DA66055329E26140768C"
+                  },
+                  {
+                      "path":  "Global/.agents/skills/aho-installer/references/os-adaptation.md",
+                      "sha256":  "F2DF68B9715570E808EF5F0A9DDD69CFB76D603FCDB522EE03D64CF4ACB4F7D0"
+                  },
+                  {
+                      "path":  "Global/.agents/skills/thinking-language/SKILL.md",
+                      "sha256":  "E07831B8F60CD1D9EAC138AC952BB9871492BD43ED5BA1D1B0CEEAA2AE4A5CDD"
+                  },
+                  {
+                      "path":  "Global/.claude/README.md",
+                      "sha256":  "E8D34A3125FC4DC507DB37C68CE4A51DA0CFB95FEE73F96D1B4353ECD21D01C9"
+                  },
+                  {
+                      "path":  "Global/.cline/mcp.json",
+                      "sha256":  "2CBAE59C018307BCECF3883D6E7A550E87BE167CB73FB78DA63BBE687C868E75"
+                  },
+                  {
+                      "path":  "Global/.codex/README.md",
+                      "sha256":  "FA9BBFBF87AFED3A90B95EF491CC499DB1A0A80D05F3CFA84B992C4064FCE0A0"
+                  },
+                  {
+                      "path":  "Global/.grok/README.md",
+                      "sha256":  "4EA910BD0B603A5C0DA3E9A3E8A02BAEED3E240535A4D94718BCF1594FFD36B0"
+                  },
+                  {
+                      "path":  "Global/.opencode/README.md",
+                      "sha256":  "71BB94D0BDCAA15B379FF6078CCA739841E7D1DD66E82A5FF052FF7C73CA1166"
+                  },
+                  {
+                      "path":  "your-project/.mcp.json",
+                      "sha256":  "196CC77AD62B91491BDFBD7499DB64751C0E89EB1A3138B274F3611E543B9117"
+                  },
+                  {
+                      "path":  "your-project/AGENTS.md",
+                      "sha256":  "CBD7ED811E26F3C46F59FE801D6A6F0092A132F632DC7F0C4955A39618BB0654"
+                  },
+                  {
+                      "path":  "your-project/CLAUDE.md",
+                      "sha256":  "9661B9B6061D4FE4EE769C49DDB3F5D21C19A2F0407C623B67ADECFB92733C85"
+                  },
+                  {
+                      "path":  "your-project/GEMINI.md",
+                      "sha256":  "B072DB385581CCF3BF9D9D8A5582F3407134705F73F97919191AEB06EC78B1D4"
+                  },
+                  {
+                      "path":  "your-project/.agents/settings.json",
+                      "sha256":  "A649C81F27721E2F99C8291D40FEE568A2B03FF6E86E85BEFB92030277E5BA73"
+                  },
+                  {
+                      "path":  "your-project/.agents/agents/demo.md",
+                      "sha256":  "42A3547C81CE3CA4C9970C655AC378DFB14919EE2356C9347C938AC294B62A06"
+                  },
+                  {
+                      "path":  "your-project/.agents/skills/aho-installer/SKILL.md",
+                      "sha256":  "3916A90454FEF81FE8F7792D6641D7C5FE7C526F57A1DA66055329E26140768C"
+                  },
+                  {
+                      "path":  "your-project/.agents/skills/aho-installer/references/os-adaptation.md",
+                      "sha256":  "F2DF68B9715570E808EF5F0A9DDD69CFB76D603FCDB522EE03D64CF4ACB4F7D0"
+                  },
+                  {
+                      "path":  "your-project/.agents/skills/demo-hello/SKILL.md",
+                      "sha256":  "14AFCB888F2DE02DBFADAD93A1CE07D6E202A115A1072219543BFD742D1FB942"
+                  },
+                  {
+                      "path":  "your-project/.agents/skills/session-boot-ritual/SKILL.md",
+                      "sha256":  "3A5D08D2C58B6CD55F43B28E0BBA849020A2B565AC5324F0F5587467EF41B8E5"
+                  },
+                  {
+                      "path":  "your-project/.agents/skills/thinking-language/SKILL.md",
+                      "sha256":  "39E3759F89C605A0B691564A703A25F1B8393590E71BB3A3E812185455710AAE"
+                  }
+              ]
+}

@@ -1,0 +1,18 @@
+﻿@{
+    'cli.help.header'        = 'aho-setup — agents-harness-os (aho) installer'
+    'cli.dryRun'             = 'DRY-RUN: no files written. Pass --apply --confirmed to materialize.'
+    'cli.jsonMode'           = 'JSON mode on'
+    'install.done'           = 'Install finished for profile {0}'
+    'install.refused'        = 'Write refused: --apply --confirmed required'
+    'install.dryRun'         = 'DRY-RUN: install did not write. Pass both --apply and --confirmed to materialize.'
+    'global.dryRun'          = 'DRY-RUN: global-setup did not write. Pass --apply --confirmed.'
+    'global.done'            = 'Global setup finished under {0}'
+    'reseed.forceRefused'    = 'reseed --force requires --confirmed; write refused.'
+    'reseed.dryRun'          = 'DRY-RUN: reseed did not write. Pass --apply to materialize.'
+    'skilladd.dryRun'        = 'DRY-RUN: skill add did not write. Pass --apply --confirmed.'
+    'verify.ok'              = 'Verify OK'
+    'doctor.ok'              = 'Doctor healthy'
+    'error.missingTarget'    = 'Missing --target'
+    'error.unknownCommand'   = 'Unknown command: {0}'
+    'orca.skipMerge'         = 'Skip merge (Orca managed marker): {0}'
+}

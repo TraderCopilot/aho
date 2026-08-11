@@ -1,0 +1,37 @@
+name: grok
+display_name: Grok
+status: stable
+
+# 发现根
+native_roots:
+  - .agents/skills
+compat_roots:
+selected_root: .agents/skills
+dedupe_key: .agents/skills
+
+# 能力矩阵
+capabilities:
+  skills: true
+  hooks: true
+  rules: true
+  mcp: false
+  commands: false
+  agents: false
+  permissions: false
+
+# 项目级
+project_root_templates:
+project_projection_from: .agents/skills
+project_projection_to: .grok/skills
+project_projection_mode: junction_or_copy
+
+# 全局级
+global_root_templates:
+  - .grok/README.md
+global_settings:
+global_projection_from: .agents/skills
+global_projection_to: .grok/skills
+global_projection_mode: junction_or_copy
+
+# 知识库引用
+knowledge_base: official-mirrors/grok/

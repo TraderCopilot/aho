@@ -1,0 +1,15 @@
+name: copilot
+display_name: GitHub Copilot CLI
+status: new
+
+# B 级声明-only：Orca 使用独立 hooks/orca.json，aho 不写该文件名
+project_root_templates:
+global_root_templates:
+global_settings:
+declare_only_hooks: true
+hooks_config_path: .copilot/hooks/orca.json
+hooks_format: json
+materialize_hooks: false
+orca_exclusive_file: true
+
+knowledge_base: official-mirrors/copilot/

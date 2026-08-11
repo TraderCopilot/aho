@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "aho-manifest",
+  "description": "aho-setup 安装清单 schema",
+  "type": "object",
+  "required": ["product", "tool", "version", "profile", "packs", "skills"],
+  "properties": {
+    "product": { "type": "string", "const": "agents-harness-os" },
+    "tool": { "type": "string", "const": "aho-setup" },
+    "version": { "type": "string" },
+    "profile": { "type": "string" },
+    "packs": { "type": "array", "items": { "type": "string" } },
+    "skills": { "type": "array", "items": { "type": "string" } },
+    "installed": { "type": "array", "items": { "type": "string" } },
+    "skipped_existing": { "type": "array", "items": { "type": "string" } },
+    "link_mode": { "type": "string", "enum": ["junction", "copy", "existing-solid", "none"] },
+    "settings_local_written": { "type": "boolean", "const": false },
+    "generated_at": { "type": "string" }
+  }
+}

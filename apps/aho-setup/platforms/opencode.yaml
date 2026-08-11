@@ -1,0 +1,45 @@
+name: opencode
+display_name: OpenCode
+status: stable
+
+# 发现根
+native_roots:
+  - .opencode/skills
+  - .agents/skills
+compat_roots:
+  - .claude/skills
+selected_root: .agents/skills
+dedupe_key: .agents/skills
+
+# 能力矩阵
+capabilities:
+  skills: true
+  hooks: true
+  rules: true
+  mcp: true
+  commands: false
+  agents: true
+  permissions: true
+
+# 项目级
+# 官方：项目 skills 在 .opencode/skills（mirrors/opencode/skills.md L20）
+project_root_templates:
+project_projection_from: .agents/skills
+project_projection_to: .opencode/skills
+project_projection_mode: junction_or_copy
+project_agents_format: markdown
+project_agents_dir: .opencode/agents
+
+# 全局级
+# OpenCode 原生亦读 ~/.agents/skills 与 ~/.claude/skills（mirrors L25–26、L33）
+# 全局投影目标必须对齐官方全局路径 ~/.config/opencode/skills（mirrors L21/L33 + Orca home-opencode）
+# 禁止写 ~/.opencode/skills（非官方全局 skills 根，Orca/OpenCode 均不扫描）
+global_root_templates:
+global_settings:
+  - .opencode/config.json
+global_projection_from: .agents/skills
+global_projection_to: .config/opencode/skills
+global_projection_mode: junction_or_copy
+
+# 知识库引用
+knowledge_base: official-mirrors/opencode/

@@ -1,0 +1,24 @@
+name: gemini
+display_name: Gemini CLI
+status: new
+
+# A 级 skills 投影（Orca home-gemini / mirrors/gemini）
+project_root_templates:
+project_projection_from: .agents/skills
+project_projection_to: .gemini/skills
+project_projection_mode: junction_or_copy
+
+global_root_templates:
+global_settings:
+global_projection_from: .agents/skills
+global_projection_to: .gemini/skills
+global_projection_mode: junction_or_copy
+
+# B 级 hooks 面（声明元数据，不承诺 merge 物化）
+# global_settings_path: .gemini/settings.json
+# project_hooks_in_settings: true
+declare_only_hooks: true
+hooks_config_path: .gemini/settings.json
+hooks_format: json
+
+knowledge_base: official-mirrors/gemini/

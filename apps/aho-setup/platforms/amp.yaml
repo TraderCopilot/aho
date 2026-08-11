@@ -1,0 +1,16 @@
+name: amp
+display_name: Amp
+status: new
+
+# B 级声明-only：无标准 skills 投影；Orca 自管插件
+# 不设置 project_projection_to → install 跳过物化
+project_root_templates:
+global_root_templates:
+global_settings:
+declare_only_hooks: true
+hooks_config_path: .config/amp/plugins/orca-agent-status.ts
+hooks_format: ts_plugin
+materialize_hooks: false
+orca_managed_file: true
+
+knowledge_base: official-mirrors/amp/

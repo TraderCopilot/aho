@@ -1,0 +1,54 @@
+name: cline
+display_name: Cline
+status: new
+
+# 发现根
+native_roots:
+  - .cline/skills
+  - .agents/skills
+compat_roots:
+selected_root: .agents/skills
+dedupe_key: .agents/skills
+
+# 能力矩阵
+capabilities:
+  skills: true
+  hooks: true
+  rules: true
+  mcp: true
+  commands: false
+  agents: true
+  permissions: true
+
+# 项目级配置
+# 规则目录（.md/.txt 文件，支持条件规则 YAML frontmatter）
+project_root_templates:
+  - .clinerules/
+project_projection_from: .agents/skills
+project_projection_to: .cline/skills
+project_projection_mode: junction_or_copy
+project_agents_format: markdown
+project_agents_dir: .cline/agents
+project_rules_path: .clinerules/
+project_rules_format: markdown
+project_rules_conditional: true
+# 项目级子目录（install 时创建空目录骨架；不得包含 project_projection_to 路径）
+project_dirs:
+  - .cline/rules/
+  - .cline/hooks/
+  - .cline/agents/
+  - .cline/plugins/
+
+# 全局级配置
+# 空列表用空值写法（key: 后无值），解析器对空值键初始化为 @()
+global_root_templates:
+global_settings:
+  - .cline/mcp.json
+global_projection_from: .agents/skills
+global_projection_to: .cline/skills
+global_projection_mode: junction_or_copy
+# 跨平台 home 占位符（运行时由 PlatformRegistry 展开）
+global_rules_dir: "{{HOME_DOCUMENTS}}/Cline/Rules"
+
+# 知识库引用
+knowledge_base: official-mirrors/cline/

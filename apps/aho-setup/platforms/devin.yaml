@@ -1,0 +1,15 @@
+name: devin
+display_name: Devin
+status: new
+
+# B 级声明-only：JSONC；路径分平台（见 mirrors/devin）
+project_root_templates:
+global_root_templates:
+global_settings:
+declare_only_hooks: true
+hooks_config_path: .config/devin/config.json
+hooks_format: jsonc
+materialize_hooks: false
+notes: Windows uses APPDATA/devin/config.json
+
+knowledge_base: official-mirrors/devin/

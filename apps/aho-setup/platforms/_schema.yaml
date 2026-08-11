@@ -1,0 +1,22 @@
+version: "1"
+
+# 本文件定位：人工阅读 + 实现校验依据，不进 PlatformRegistry 运行时解析
+# 原因：placeholders 节含嵌套 map + {{}} 键，现有解析器不支持
+
+status_enum:
+  - stable
+  - new
+  - stub
+  - disabled
+
+# 布尔值约定：以字符串 true/false 表示，消费方用 -eq 'true' 比较
+# 示例：project_hooks_in_settings: true → 解析为字符串 "true"
+boolean_as_string: true
+
+# 列表项约定：禁止行内注释，注释放键上方整行
+# 空列表约定：用空值写法（key: 后无值），非 []（解析器将 [] 解析为字符串）
+# project_dirs 约定：不得包含任何 *_projection_to 路径（投影由 New-AhoJunctionOrCopy 自建）
+
+# 跨平台占位符（文档用，不进运行时解析）
+# {{HOME_DOCUMENTS}}: 用户 Documents 目录（macOS/Linux: ~/Documents, Windows: %USERPROFILE%\Documents）
+# {{HOME}}: 用户 HOME 目录

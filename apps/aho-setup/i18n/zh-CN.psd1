@@ -1,0 +1,18 @@
+﻿@{
+    'cli.help.header'        = 'aho-setup — agents-harness-os (aho) 安装器'
+    'cli.dryRun'             = '试运行：未写入文件。加 --apply --confirmed 执行物化。'
+    'cli.jsonMode'           = '已开启 JSON 模式'
+    'install.done'           = '安装完成，profile={0}'
+    'install.refused'        = '拒绝写入：需要 --apply --confirmed'
+    'install.dryRun'         = '试运行：安装未写入。加 --apply --confirmed 执行物化。'
+    'global.dryRun'          = '试运行：全局安装未写入。加 --apply --confirmed。'
+    'global.done'            = '全局安装完成：{0}'
+    'reseed.forceRefused'    = 'reseed --force 需要 --confirmed；拒绝写入。'
+    'reseed.dryRun'          = '试运行：reseed 未写入。加 --apply 执行物化。'
+    'skilladd.dryRun'        = '试运行：skill add 未写入。加 --apply --confirmed。'
+    'verify.ok'              = '校验通过'
+    'doctor.ok'              = '诊断健康'
+    'error.missingTarget'    = '缺少 --target'
+    'error.unknownCommand'   = '未知命令：{0}'
+    'orca.skipMerge'         = '跳过合并（Orca 托管标记）：{0}'
+}

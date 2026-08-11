@@ -1,0 +1,45 @@
+name: codex
+display_name: OpenAI Codex
+status: stable
+
+# 发现根
+native_roots:
+  - .codex/skills
+  - .agents/skills
+compat_roots:
+selected_root: .agents/skills
+dedupe_key: .agents/skills
+
+# 能力矩阵
+capabilities:
+  skills: true
+  hooks: true
+  rules: true
+  mcp: true
+  commands: false
+  agents: true
+  permissions: true
+
+# 项目级
+project_root_templates:
+  - AGENTS.md
+project_projection_from: .agents/skills
+project_projection_to: .codex/skills
+project_projection_mode: junction_or_copy
+project_settings_path: .codex/config.toml
+project_settings_merge: shallow
+project_hooks_path: .codex/hooks.json
+project_hooks_in_settings: false
+project_agents_format: toml
+project_agents_dir: .codex/agents
+
+# 全局级
+global_root_templates:
+global_settings:
+  - .codex/config.toml
+global_projection_from: .agents/skills
+global_projection_to: .codex/skills
+global_projection_mode: junction_or_copy
+
+# 知识库引用
+knowledge_base: official-mirrors/codex/

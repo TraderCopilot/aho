@@ -1,0 +1,46 @@
+name: claude
+display_name: Claude Code
+status: stable
+
+# 发现根
+native_roots:
+  - .claude/skills
+compat_roots:
+  - .agents/skills
+selected_root: .claude/skills
+dedupe_key: .agents/skills
+
+# 能力矩阵
+capabilities:
+  skills: true
+  hooks: true
+  rules: false
+  mcp: true
+  commands: true
+  agents: false
+  permissions: true
+
+# 项目级
+project_root_templates:
+  - CLAUDE.md
+project_projection_from: .agents/skills
+project_projection_to: .claude/skills
+project_projection_mode: junction_or_copy
+project_settings_path: .claude/settings.json
+project_settings_merge: deep
+project_settings_forbidden: .claude/settings.local.json
+project_hooks_in_settings: true
+project_hooks_settings_key: hooks
+
+# 全局级
+global_root_templates:
+  - .claude/CLAUDE.md
+global_settings:
+  - .claude/settings.json
+  - .claude/keybindings.json
+global_projection_from: .agents/skills
+global_projection_to: .claude/skills
+global_projection_mode: junction_or_copy
+
+# 知识库引用
+knowledge_base: official-mirrors/claude/

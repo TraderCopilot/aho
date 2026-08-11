@@ -1,0 +1,40 @@
+name: cursor
+display_name: Cursor
+status: new
+
+# 发现根
+native_roots:
+  - .cursor/skills
+compat_roots:
+  - .agents/skills
+selected_root: .cursor/skills
+dedupe_key: .agents/skills
+
+# 能力矩阵
+capabilities:
+  skills: true
+  hooks: false
+  rules: true
+  mcp: true
+  commands: false
+  agents: false
+  permissions: false
+
+# A 级：stub→new，skills 投影（Orca home-cursor）
+project_root_templates:
+project_projection_from: .agents/skills
+project_projection_to: .cursor/skills
+project_projection_mode: junction_or_copy
+
+global_root_templates:
+global_settings:
+global_projection_from: .agents/skills
+global_projection_to: .cursor/skills
+global_projection_mode: junction_or_copy
+
+# B 级 hooks 面声明-only
+declare_only_hooks: true
+hooks_config_path: .cursor/hooks.json
+hooks_format: json
+
+knowledge_base: official-mirrors/cursor/

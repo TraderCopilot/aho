@@ -1,0 +1,7 @@
+{
+  "distribution": "public-demo",
+  "default_profile": "demo",
+  "allowed_profiles": ["demo"],
+  "disabled_commands": ["matt-setup", "reseed", "skill"],
+  "public_documentation": true
+}

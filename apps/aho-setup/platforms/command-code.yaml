@@ -1,0 +1,14 @@
+name: command-code
+display_name: Command Code
+status: new
+
+# B 级声明-only
+project_root_templates:
+global_root_templates:
+global_settings:
+declare_only_hooks: true
+hooks_config_path: .commandcode/settings.json
+hooks_format: json
+materialize_hooks: false
+
+knowledge_base: official-mirrors/command-code/

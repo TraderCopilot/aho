@@ -1,0 +1,4 @@
+name: demo
+description: Public demo profile — minimal skills only (external release default)
+packs:
+  - demo-core

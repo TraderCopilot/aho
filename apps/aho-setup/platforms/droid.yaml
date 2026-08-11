@@ -1,0 +1,14 @@
+name: droid
+display_name: Factory Droid
+status: new
+
+# B 级声明-only
+project_root_templates:
+global_root_templates:
+global_settings:
+declare_only_hooks: true
+hooks_config_path: .factory/settings.json
+hooks_format: json
+materialize_hooks: false
+
+knowledge_base: official-mirrors/droid/

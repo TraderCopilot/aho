@@ -1,0 +1,19 @@
+name: codebuddy
+display_name: CodeBuddy
+status: stable
+
+# 项目级
+project_root_templates:
+project_projection_from: .agents/skills
+project_projection_to: .codebuddy/skills
+project_projection_mode: junction_or_copy
+
+# 全局级
+global_root_templates:
+global_settings:
+global_projection_from: .agents/skills
+global_projection_to: .codebuddy/skills
+global_projection_mode: junction_or_copy
+
+# 知识库引用
+knowledge_base: official-mirrors/codebuddy/

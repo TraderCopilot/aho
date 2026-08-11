@@ -1,0 +1,15 @@
+name: kimi
+display_name: Kimi Code
+status: new
+
+# B 级声明-only：TOML hooks；无 TOML merge 前不物化
+project_root_templates:
+global_root_templates:
+global_settings:
+declare_only_hooks: true
+hooks_config_path: .kimi-code/config.toml
+hooks_format: toml
+materialize_hooks: false
+orca_managed_marker: orca-managed-kimi-hooks
+
+knowledge_base: official-mirrors/kimi/

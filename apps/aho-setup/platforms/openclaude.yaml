@@ -1,0 +1,15 @@
+name: openclaude
+display_name: OpenClaude
+status: new
+
+# B 级声明-only：独立 ~/.openclaude（Orca OPENCLAUDE_HOOK_SETTINGS）
+project_root_templates:
+global_root_templates:
+global_settings:
+declare_only_hooks: true
+hooks_config_path: .openclaude/settings.json
+hooks_format: json
+materialize_hooks: false
+project_settings_path: .openclaude/settings.json
+
+knowledge_base: official-mirrors/orca/

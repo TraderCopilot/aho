@@ -1,0 +1,64 @@
+name: Release Tests
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  test-windows-ps51:
+    name: Windows PowerShell 5.1
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run release test matrix
+        shell: powershell
+        run: |
+          .\apps\aho-setup\bin\test-release.ps1 -Root ${{ github.workspace }}
+
+  test-windows-ps7:
+    name: Windows PowerShell 7
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run release test matrix
+        shell: pwsh
+        run: |
+          .\apps\aho-setup\bin\test-release.ps1 -Root ${{ github.workspace }}
+
+  verify-release:
+    name: Release Tree Verification
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild manifest
+        shell: pwsh
+        run: |
+          .\apps\aho-setup\bin\rebuild-manifest.ps1 -Root ${{ github.workspace }}
+      - name: Verify release tree
+        shell: pwsh
+        run: |
+          .\apps\aho-setup\bin\verify-release.ps1 -Root ${{ github.workspace }}
+
+  demo-smoke:
+    name: Demo Smoke Test
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: plan + install + verify + doctor
+        shell: pwsh
+        run: |
+          $tmp = Join-Path $env:TEMP "aho-ci-smoke"
+          New-Item -ItemType Directory -Path $tmp -Force | Out-Null
+          $cli = "${{ github.workspace }}\apps\aho-setup\bin\aho-setup.ps1"
+          & $cli plan --profile demo --target $tmp --json | ConvertFrom-Json | Select-Object profile, exit_code
+          & $cli install --profile demo --target $tmp --apply --confirmed --json | ConvertFrom-Json | Select-Object exit_code
+          $v = & $cli verify --target $tmp --json | ConvertFrom-Json
+          $d = & $cli doctor --target $tmp --json | ConvertFrom-Json
+          if ($v.exit_code -ne 0) { throw "verify failed: exit $($v.exit_code)" }
+          if ($d.exit_code -ne 0) { throw "doctor failed: exit $($d.exit_code)" }
+          Remove-Item -Recurse -Force $tmp -ErrorAction SilentlyContinue

@@ -1,0 +1,18 @@
+name: pi
+display_name: Pi
+status: new
+
+# A 级 skills 投影（Orca home-pi / mirrors/pi）
+project_root_templates:
+project_projection_from: .agents/skills
+project_projection_to: .pi/agent/skills
+project_projection_mode: junction_or_copy
+
+global_root_templates:
+global_settings:
+global_projection_from: .agents/skills
+global_projection_to: .pi/agent/skills
+global_projection_mode: junction_or_copy
+
+# extension 机制 C 级：不物化
+knowledge_base: official-mirrors/pi/

@@ -1,0 +1,48 @@
+name: Release Manifest Check
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'apps/**'
+      - 'Global/**'
+      - 'your-project/**'
+      - 'docs/**'
+      - 'README.md'
+      - 'SECURITY.md'
+      - 'CHANGELOG.md'
+      - 'LICENSE'
+      - 'VERSION'
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  manifest:
+    name: Manifest Hash Verification
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify manifest hashes
+        shell: pwsh
+        run: |
+          $manifest = Get-Content "RELEASE-MANIFEST.json" -Raw -Encoding UTF8 | ConvertFrom-Json
+          $root = "${{ github.workspace }}"
+          $failures = 0
+          foreach ($entry in $manifest.files) {
+            $fullPath = Join-Path $root ($entry.path -replace "/", "\")
+            if (-not (Test-Path -LiteralPath $fullPath)) {
+              Write-Host "MISSING: $($entry.path)"
+              $failures++
+              continue
+            }
+            $hash = (Get-FileHash -LiteralPath $fullPath -Algorithm SHA256).Hash
+            if ($hash -ne $entry.sha256) {
+              Write-Host "MISMATCH: $($entry.path)"
+              $failures++
+            }
+          }
+          if ($failures -gt 0) { throw "Manifest verification failed: $failures file(s)" }
+          Write-Host "Manifest OK: $($manifest.files.Count) files verified"
