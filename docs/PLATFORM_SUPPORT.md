@@ -29,8 +29,8 @@ This document lists the 18 platforms declared in this release, their support gra
 
 | Grade | Meaning | Install behavior |
 |:---|:---|:---|
-| A (stable) | Full chain available. | Projection + hooks/settings merge + doctor check. |
-| B (new / declare_only) | Platform is declared; config path is known. | Directory projection only. No hooks or settings merge. |
+| A (stable) | Full chain available. | Projection + settings merge + doctor check. (Hooks would be merged if hook templates were shipped; this demo ships none.) |
+| B (new / declare_only) | Platform is declared; config path is known. | Directory projection only. No settings merge or hooks. |
 | stub | Declaration only. | Does not participate in install or doctor. Visible to `scan` only. |
 
 No platform in this release is marked `stub`. All 18 are at least B-grade (directory projection).
@@ -72,7 +72,7 @@ This is the only behavioral difference between platforms. The source of truth (`
 
 - Project settings: `.claude/settings.json` (deep-merged).
 - Forbidden: `.claude/settings.local.json` (never written by installer).
-- Hooks: written to `.claude/settings.json` under the `hooks` key.
+- Hooks: the platform supports hooks in `.claude/settings.json` under the `hooks` key, but this demo release does not ship hook templates, so no hooks are written during install.
 
 ### OpenCode (`opencode`)
 
@@ -105,7 +105,7 @@ Returns JSON listing detected platform directories, their grade, and whether pro
 ## 6. Limitations
 
 - **No platform-specific skill variants.** All platforms receive the same four demo skills. If a platform does not support a skill's syntax, the skill is still projected; the agent may ignore it.
-- **No per-platform hooks in this release.** A-grade platforms receive the standard hook set; B-grade platforms receive none.
+- **No platform hooks in this release.** The demo release does not ship hook templates. `Hooks.ps1` is a merge library that activates only when hook templates are present; the current demo has none, so no platform receives hooks during install. A-grade platforms still receive projections and settings merge; B-grade platforms receive directory projection only.
 - **No automatic platform upgrade.** A B-grade platform cannot be upgraded to A-grade by configuration. Upgrading requires changes in the source repository and a new release.
 - **Linux/macOS copies are not live.** Re-run `install` after editing `.agents/` to refresh projections on non-Windows platforms.
 

@@ -2,12 +2,12 @@
     "product":  "agents-harness-os",
     "distribution":  "public-demo",
     "version":  "0.5.0",
-    "generated_at":  "2026-08-12T05:30:50.6402805+08:00",
+    "generated_at":  "2026-08-12T07:42:07.8729178+08:00",
     "file_count":  87,
     "files":  [
                   {
                       "path":  ".gitignore",
-                      "sha256":  "F71FC4EF3C3E49D7801049E7CE235BB1075A7D3C2AEE8D28BC5B3973506843D2"
+                      "sha256":  "B93814C49FE66E29AA253B1D9A3E68881B64437B2A4987C529E1E5185DAFA0A1"
                   },
                   {
                       "path":  "CHANGELOG.md",
@@ -39,11 +39,11 @@
                   },
                   {
                       "path":  ".github/workflows/ci.yml",
-                      "sha256":  "776F35272106C70B88B83CE0B2AC26BF6B03E8BD82032B483FB28DC9A9915239"
+                      "sha256":  "6C02757C8DECA0441A9E5D008FD878CAF162E00556DF123530C8F57F31F1A87E"
                   },
                   {
                       "path":  ".github/workflows/manifest.yml",
-                      "sha256":  "3E0D6E246ED1E571BA003E96EEF5F8B2819BFC350835EC4B4D130D5A7AB82C04"
+                      "sha256":  "A8D5C25DAEBABA2CC4F6640BA38A7B9F7521410FE9F2E3642C39C946A53E5F1A"
                   },
                   {
                       "path":  "apps/aho-setup/distribution.json",
@@ -255,7 +255,7 @@
                   },
                   {
                       "path":  "docs/PLATFORM_SUPPORT.md",
-                      "sha256":  "FD9189CF263561FF05A8D4879224A3B1602EA1B9639BE9F4C3FFC59408145E9D"
+                      "sha256":  "7CBC839E5F59D0E2A5FC4E18726C552EEC5831B8127C7F081A83E1B4FC261B1F"
                   },
                   {
                       "path":  "docs/RELEASE-CONTRACT.md",

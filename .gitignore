@@ -2,3 +2,13 @@ docs/plans/
 docs/audit/
 .codeartsdoer/
 NEXT-SESSION-PROMPT.md
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.ssh/
+credentials/
+secrets/
