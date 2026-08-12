@@ -59,7 +59,7 @@ The shipped template is minimal:
   "aho": {
     "schema_version": "1",
     "scope": "project",
-    "note": "项目级 .agents 设置模板"
+    "note": "Project-level .agents settings template"
   }
 }
 ```

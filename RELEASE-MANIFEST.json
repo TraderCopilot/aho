@@ -2,9 +2,13 @@
     "product":  "agents-harness-os",
     "distribution":  "public-demo",
     "version":  "0.5.0",
-    "generated_at":  "2026-08-12T08:12:25.0683131+08:00",
-    "file_count":  87,
+    "generated_at":  "2026-08-12T09:17:06.3477574+08:00",
+    "file_count":  88,
     "files":  [
+                  {
+                      "path":  ".gitattributes",
+                      "sha256":  "6FCEA03D7C3B2A9FAB61DD2D2699A29B90B865ED81C2B09A37E67F2E0CF9F4A2"
+                  },
                   {
                       "path":  ".gitignore",
                       "sha256":  "B93814C49FE66E29AA253B1D9A3E68881B64437B2A4987C529E1E5185DAFA0A1"
@@ -247,7 +251,7 @@
                   },
                   {
                       "path":  "docs/CONFIGURATION.md",
-                      "sha256":  "0093105229F218508857CE26D7913511E6A0D82BAA801B64F599418228500C76"
+                      "sha256":  "2B95BDF31543994227E43F9DDDDF42997FC09029F7BBB28DC46504DC9D1259B6"
                   },
                   {
                       "path":  "docs/GETTING_STARTED.md",
