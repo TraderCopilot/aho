@@ -1,21 +1,20 @@
 ---
 name: session-boot-ritual
-description: 通用会话启动：确认 cwd、读本仓 AGENTS/任务边界，不绑定特定产品仓路径。
+description: Generic session startup checklist: confirm cwd, read project AGENTS/task boundaries.
 ---
 
 # session-boot-ritual
 
-> 本 skill 随脚手架装进**业务仓**，只描述通用启动习惯。  
-> **开发 agents-harness-os 产品仓时的 Boot/Handover 不在这里**——见产品仓根目录 `GEMINI.md`。
+> This skill is installed into **user projects** as a generic startup checklist.
 
-## 通用步骤
+## Steps
 
-1. 确认工作区路径正确  
-2. 读本仓根 `AGENTS.md`（若有）  
-3. 读本仓任务/交接文件（若有，以本仓约定名为准）  
-4. 明确本 session 边界与不做什么  
-5. 再开始实现  
+1. Confirm the working directory path is correct.
+2. Read the project root `AGENTS.md` (if present).
+3. Read the project task/handover files (if present, using the project's own naming convention).
+4. State the scope of this session and what will not be done.
+5. Begin implementation.
 
-## 语言
+## Language
 
-与用户交流、思维链：按本仓 AGENTS 要求（默认中文）。
+Follow the language directive in the project's `AGENTS.md`. Default: English.

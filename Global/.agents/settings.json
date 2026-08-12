@@ -2,6 +2,6 @@
   "aho": {
     "schema_version": "1",
     "scope": "global",
-    "note": "全局 ~/.agents 设置模板"
+    "note": "Global ~/.agents settings template"
   }
 }

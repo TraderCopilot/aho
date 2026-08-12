@@ -1,15 +1,15 @@
 ---
 name: thinking-language
-description: 聊天框与思维链强制中文；代码标识符与 commit 使用英文。
+description: Pins the agent's working language. Edit this skill to change the language for your project.
 ---
 
 # thinking-language
 
-## 规则（宪法级）
+## Rule
 
-1. **聊天框**全部回复：中文
-2. **思维链**（Thinking / Thought Process / 推理叙述）：中文
-3. 文档、TASK、任务状态与摘要：中文
-4. 代码中的变量名、函数名、类名：英文
-5. Git commit message：英文
-6. 技术术语（JWT、WebSocket 等）可保留英文
+1. **Dialogue and thinking**: follow the language set in `AGENTS.md`. Default: English.
+2. **Code identifiers** (variable names, function names, class names): English.
+3. **Git commit messages**: English.
+4. **Technical terms** (JWT, WebSocket, etc.): may remain in English.
+
+To use a different language, edit this skill and the `AGENTS.md` language section.

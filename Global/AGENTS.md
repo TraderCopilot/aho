@@ -1,17 +1,17 @@
-# 全局指令宪法母版（模板）
+# Global Agent Instructions (Template)
 
-> 由 aho-setup global-setup 作为 merge 建议源。安装时**不覆盖**用户已有全局指令文件。
+> Used by aho-setup global-setup as a merge source. Installation **does not overwrite** existing global instruction files.
 
-## 语言宪法（强制）
+## Language
 
-**所有聊天框内容与思维链必须使用中文**，包括：对话、Thinking/思维链、Task 状态与摘要、文档与关键注释。
+Choose your preferred working language and state it here. The agent will follow this for dialogue, thinking, and documentation.
 
-**例外**：代码标识符、Git commit message、API 路径用英文；技术术语可保留英文；直接引用的英文原文可保持原文（说明用中文）。
+Default: English. To use another language, replace this section with your own directive.
 
-## 全局运行时 SSOT
+## Global Runtime SSOT
 
-装完后全局 skill 请维护在：
+After installation, maintain global skills at:
 
-- **`~/.agents/`**（或测试隔离 HOME 下的 `.agents/`）
+- **`~/.agents/`** (or `.agents/` under a test-isolated HOME)
 
-不要在平台投影目录维护第二份 skill 正文。
+Do not maintain a second copy of skill content in platform projection directories.

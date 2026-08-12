@@ -2,7 +2,7 @@
     "product":  "agents-harness-os",
     "distribution":  "public-demo",
     "version":  "0.5.0",
-    "generated_at":  "2026-08-12T07:42:07.8729178+08:00",
+    "generated_at":  "2026-08-12T08:12:25.0683131+08:00",
     "file_count":  87,
     "files":  [
                   {
@@ -271,11 +271,11 @@
                   },
                   {
                       "path":  "Global/AGENTS.md",
-                      "sha256":  "CF1B4BDD29AD3EB09FC96CB4985D5DB9A4781641BF964DBDA4F67E87C978D862"
+                      "sha256":  "E4D503988395E6F16972F99DAFB1B99AE6741A8A5A31FDE95C2EA98F58AD7244"
                   },
                   {
                       "path":  "Global/.agents/settings.json",
-                      "sha256":  "92FE0E1F6CAD3FDC07F626B28485A4406939A64E4A61DA5A3C39F4ECE255D7F5"
+                      "sha256":  "156F1B77358FCED8B4F69776B0A176C497C641013C3790003CE9E989447DEA92"
                   },
                   {
                       "path":  "Global/.agents/skills/aho-installer/SKILL.md",
@@ -287,7 +287,7 @@
                   },
                   {
                       "path":  "Global/.agents/skills/thinking-language/SKILL.md",
-                      "sha256":  "E07831B8F60CD1D9EAC138AC952BB9871492BD43ED5BA1D1B0CEEAA2AE4A5CDD"
+                      "sha256":  "A52723121A1A2FC0F473ABA3DC804A6F99186F487590C879DE6EECA8FA6B1EF0"
                   },
                   {
                       "path":  "Global/.claude/README.md",
@@ -315,19 +315,19 @@
                   },
                   {
                       "path":  "your-project/AGENTS.md",
-                      "sha256":  "CBD7ED811E26F3C46F59FE801D6A6F0092A132F632DC7F0C4955A39618BB0654"
+                      "sha256":  "24E8F9BB045D23E5F82A0B6B1D25B462AC5E2A4B7C0B6F9C5695346401F2E9C2"
                   },
                   {
                       "path":  "your-project/CLAUDE.md",
-                      "sha256":  "9661B9B6061D4FE4EE769C49DDB3F5D21C19A2F0407C623B67ADECFB92733C85"
+                      "sha256":  "2C5CE3A76B544EA4546F0098B4BF6499AB51AE5E67839B60AA14E1980575F643"
                   },
                   {
                       "path":  "your-project/GEMINI.md",
-                      "sha256":  "B072DB385581CCF3BF9D9D8A5582F3407134705F73F97919191AEB06EC78B1D4"
+                      "sha256":  "58C5C984746C3EA4C0EDFD8BC0B08C35CF0F1A394A1CD480CBFE42F50F1251E1"
                   },
                   {
                       "path":  "your-project/.agents/settings.json",
-                      "sha256":  "A649C81F27721E2F99C8291D40FEE568A2B03FF6E86E85BEFB92030277E5BA73"
+                      "sha256":  "6D0C6ED695E2B7F60256C69C773F79A61622DFC0EE9C9C76B250212C781A070B"
                   },
                   {
                       "path":  "your-project/.agents/agents/demo.md",
@@ -347,11 +347,11 @@
                   },
                   {
                       "path":  "your-project/.agents/skills/session-boot-ritual/SKILL.md",
-                      "sha256":  "3A5D08D2C58B6CD55F43B28E0BBA849020A2B565AC5324F0F5587467EF41B8E5"
+                      "sha256":  "7C28F97B5FB2CE32C31CA48A62186BB22644A3E1E4173461442758E0FC2190EE"
                   },
                   {
                       "path":  "your-project/.agents/skills/thinking-language/SKILL.md",
-                      "sha256":  "39E3759F89C605A0B691564A703A25F1B8393590E71BB3A3E812185455710AAE"
+                      "sha256":  "191DEB287F0302BF31A3FF2BDEE9D312B9EA7D445ED43A1AEE9A8583AC334DA8"
                   }
               ]
 }

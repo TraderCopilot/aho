@@ -1,31 +1,30 @@
-# 项目级指令宪法（模板）
+# Project Agent Instructions (Template)
 
-> 由 aho-setup 安装到业务仓根目录 `AGENTS.md`。装完后请按项目需要编辑本文件。
+> Installed by aho-setup to the project root as `AGENTS.md`. Edit this file to fit your project after installation.
 
-## 1. 语言宪法（强制）
+## 1. Language
 
-**所有聊天框内容与思维链必须使用中文**，包括：
+Choose your preferred working language and state it here. The agent will follow this for dialogue, thinking, and documentation.
 
-- 与用户的全部对话、汇报、计划说明
-- 思维链 / Thinking / Thought Process / 任务状态与摘要
-- 文档、TASK、关键逻辑注释
+Default: English. To use another language, replace this section with your own directive.
 
-**例外**：代码标识符、Git commit message、API 路径用英文；技术术语可保留英文；直接引用的英文原文可保持原文（说明用中文）。
+## 2. Runtime Configuration (after install)
 
-## 2. 运行时配置 SSOT（装完后）
-
-| 类型 | 路径 |
+| Type | Path |
 |:---|:---|
-| 项目 skill / workflow | `./.agents/` |
-| 全局 skill | `~/.agents/` |
+| Project skills / workflow | `./.agents/` |
+| Global skills | `~/.agents/` |
 
-不要把 `.claude/skills` 等投影目录当作第二份正文源。
+Do not treat projection directories (e.g. `.claude/skills`) as a second source of truth — they are generated from `.agents/`.
 
 ## 3. Git
 
-- 优先使用项目提供的 safe-push 流程（若有）
-- 禁止未确认的 `reset --hard` / force-push / 批量删除
+- Use pull requests for review when possible.
+- Do not force-push or hard-reset without explicit confirmation.
+- Do not batch-delete branches without confirmation.
 
-## 4. 凭据
+## 4. Credentials
 
-- 禁止硬编码 API Key；使用环境变量或本地 `.env`（且勿提交）
+- Never hardcode API keys, tokens, or passwords.
+- Use environment variables or a local `.env` file (gitignored).
+- Never commit `.env`, `.ssh/`, or credential files.

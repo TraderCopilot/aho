@@ -1,7 +1,5 @@
-# Claude 项目指令（薄包装）
+# Claude Project Instructions (thin wrapper)
 
-本文件与项目根 **AGENTS.md** 对齐。跨工具通用规则以 **AGENTS.md** 为准。
+This file aligns with the project root **AGENTS.md**. Cross-tool rules are defined in **AGENTS.md**.
 
-**语言**：聊天框与思维链必须中文（见 AGENTS.md §语言宪法）。
-
-请先读 `AGENTS.md`，再按 Claude 需要补充本文件专属说明。
+Read `AGENTS.md` first, then add Claude-specific notes here as needed.
