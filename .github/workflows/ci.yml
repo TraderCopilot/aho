@@ -14,7 +14,7 @@ jobs:
     name: Windows PowerShell 5.1
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Run release test matrix
         shell: powershell
         run: |
@@ -24,7 +24,7 @@ jobs:
     name: Windows PowerShell 7
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Run release test matrix
         shell: pwsh
         run: |
@@ -34,7 +34,7 @@ jobs:
     name: Release Tree Verification
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Rebuild manifest
         shell: pwsh
         run: |
@@ -48,7 +48,7 @@ jobs:
     name: Demo Smoke Test
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: plan + install + verify + doctor
         shell: pwsh
         run: |
